@@ -1,0 +1,77 @@
+<!docprogram MiniLang__8>
+<SUB VARIABLE>
+<var1 AS CHR/>;
+<var2 AS FLT/>;
+<var4 AS INT/>;
+<var4 AS BOL/>;
+<SUB CONSTANTE>
+<Const_1 = 0/>; 
+<Const_2= (+10.01)/>; 
+<Const_3= (-13.004)/>;
+<Const_4= FALSE/>;
+<Const_5= TRUE/>;
+<Const_6= 'c'/>;
+<Const_7= "hello world!"/>;
+</SUB CONSTANTE>
+<SUB CONSTANTE>
+<Const_8 AS STR />; 
+<Const_9 AS INT />; 
+</SUB CONSTANTE>
+<ARRAY AS FLT>
+<Tab1 : 10/>;
+<Tab2 : 5/>;
+<Tab3 : 0/>;
+</ARRAY>
+</SUB VARIABLE> 
+<body> 
+<INPUT : var1 "donner la valeur de & : "/>
+<OUTPUT: "hello guys!!!"/> 
+<INPUT : var1 "donner la valeur de $ : "/>
+<OUTPUT: "la valeur de b est $ :"+b+"la valeur de k est @"+k+"la valeur de t est $"+t/> 
+<OUTPUT: "la valeur de var1 est $ :"+var1+"la valeur de var2 est "+var2+"la valeur de var4 est %"+var4/> 
+<AFF: var1, b/>
+<AFF: var1, TRUE/>
+<AFF: Const_2, 5.5/>
+<AFF: Const_7, "game"/>
+<AFF: Const_8, 6.02/>
+<AFF: Const_8, (-1.058)/>
+<AFF: var1, var1/>
+<AFF: var2, (+12.5)*(-5)+12/5-3/>
+<AFF: var2, 5/0 />
+<AFF: var2, a1/0.0 />
+<AFF: var2, 8.5+a1/(+0.0) />
+<AFF: var2, 5/(-0.0) />
+<AFF: Tab1[10], 5 />
+<AFF: Tab2[8],  (+12.5)*(-5)+12/>
+<AFF: Tab2[0],  1/>
+<IF: AND(SUP(var1,b),EGA(1,4*x))> 
+<THEN> 
+<AFF: var1, TRUE/>
+<INPUT : var2 "%"/>
+</THEN> 
+<ELSE> 
+<AFF: var1, b*c/>
+<OUTPUT: "la valeur de var1 est $ :"+var1/> 
+<OUTPUT: "la valeur de var2 est :"+var2/> 
+<INPUT : var2 "donner la valeur de $"/>
+<INPUT : var2 "saisir la valeur de var2!!!!"/>
+</ELSE> 
+</IF> 
+<DO> 
+<AFF: var1, b*c/>
+<INPUT : var1 "donner la valeur de @ :"/>
+<WHILE : NOT(TRUE)/> 
+</DO> 
+<DO> 
+<AFF: var1, b*c/>
+<WHILE : NOT(AND(TRUE,SUP(var1,b)))/> 
+</DO> 
+<FOR i=1 UNTIL 14> 
+<AFF: var1, b*c/>
+</FOR>
+<FOR i=1 UNTIL c> 
+<AFF: var1, b*c/>
+</FOR>
+</body> 
+</docprogram> 
+ 
